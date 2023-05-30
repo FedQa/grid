@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.myGrid {
+    display: grid;
+    border: 5px solid #17be17;
+    height: 92vh;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.myGrid > * {
+    background-color: #ffbf94;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 1px;
+}
