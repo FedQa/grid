@@ -4,13 +4,31 @@ body {
 .myGrid {
     display: grid;
     border: 5px solid #17be17;
-    height: 92vh;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 250px 150px;
+}
+img {
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
 }
 .myGrid > * {
     background-color: #ffbf94;
     border-radius: 5px;
     padding: 5px;
     margin: 1px;
+}
+
+.myArea {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
 }
